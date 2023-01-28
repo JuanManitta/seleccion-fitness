@@ -1,0 +1,199 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 8.5rem;
+    position: sticky;
+    top: 0;
+    transition: all 0.6s ease;
+  }
+  
+  .nav__burguer-menu {
+    display: none;
+  }
+  
+  .nav__scrolled {
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.3);
+    background-color: white;
+    transition: all 0.6s ease;
+  }
+  
+  nav a {
+    text-decoration: none;
+  }
+  
+  .nav__logo {
+    display: grid;
+    align-content: center;
+    padding: 0.5rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.3);
+    height: 100%;
+    width: 110%;
+    background-color: white;
+    transition: all 0.6s ease;
+    cursor: pointer
+  }
+  
+  .nav__logo-scrolled {
+    background-color: #205295;
+    transition: all 0.6s ease
+  }
+  .nav__logo:hover {
+    background-color: #205295;
+  }
+  
+  .nav__logo:hover .nav__logo-span{
+    color: white;
+  
+  }
+  
+  
+  .nav__logo-span {
+    color: black;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.6s ease
+  }
+  
+  .nav__logo-span-scrolled {
+    color: white;
+    transition: all 0.6s ease
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav ul li {
+    list-style-type: none;
+    margin-right: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+  }
+  
+  nav ul li::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #205295;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  nav ul li:hover::before {
+    width: 100%;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* CLASES DINAMICAS */
+
+  .display {
+    display: none;
+  }
+  
+  .show_display_grid {
+    display: grid;
+  }
+
+
+
+  /* MEDIA QUERYS */
+
+@media (max-width: 992px) {
+
+    /* NAVBAR */
+  
+    .nav__logo {
+      margin-left: 1rem;
+    }
+  
+    .nav__logo-span{
+      font-size: 12px;
+    }
+  
+    nav ul li {
+      font-size: 12px;
+    } 
+  }
+  
+  
+  @media (max-width: 768px) {
+  
+    nav {
+      justify-content: space-between;
+    }
+  
+    .nav__logo{
+      margin-left: 1rem;
+    }
+  
+    .nav__burguer-menu {
+      display: block;
+      width: 25px;
+      padding: 7px;
+      cursor: pointer;
+    }
+  
+    nav ul {
+      margin: 0px;
+      padding: 0px;
+      display: none;
+      position: fixed;
+      right: 0px;
+      top:2.4rem;
+      background-color: white;
+      border-radius: 5px;
+      height: 200px;
+      box-shadow: 1px 1px 8px rgba(0,0,0,0.3);
+    }
+  
+    nav ul li {
+      margin: 0px;
+      padding: 1.3rem;
+      text-align: right;
+      font-size: 14px;
+  
+    }
+  
+    nav ul li::before{
+      background: white;
+    }
+
+  }
+  
+  
+  
+  @media (max-width: 470px) {
+  
+    .nav__logo{
+      width: 90%;
+      height: 80%;
+      margin-left: 1rem;
+    }
+  
+    .nav__logo-span {
+      font-size: 10px;
+    }
+  
+    main header{
+      margin-top: 3rem;
+      padding: 5%;
+    }
+  }
+  

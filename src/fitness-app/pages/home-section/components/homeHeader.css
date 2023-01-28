@@ -1,0 +1,103 @@
+main header {
+    padding: 0% 10% 0 10%;
+    display: grid;
+    place-content: center;
+    min-height: 50vw;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .header__div-text{
+    justify-content: center;
+  }
+  
+  .header__div-text h1 {
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  .header__div-text p{
+    font-size: 1.1rem;
+    letter-spacing: 1.3px;
+    line-height: 1.5rem;
+    text-align: justify;
+    font-weight: 400;
+  }
+  
+  .header__div-figure{
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+  .header__figure img {
+    width: 350px;
+  }
+  
+  .header__div-button {
+    display: flex;
+    height: 3rem;
+  }
+  
+  .header__div-button button{
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #205295, #2c71cd  );
+    box-shadow: 1px 4px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .header__div-button button:hover {
+    background-color: #2661b1;
+    transition: all 0.3s;
+  }
+  
+  .header__div-button button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+
+
+
+  /* MEDIA QUERYS */
+
+@media (max-width: 992px) {
+  
+    main header {
+      grid-template-columns: auto;
+      height: 100vh;
+      grid-gap: 2rem;
+  
+    }
+  
+    .header__div-text h1 {
+      font-size: 3rem;
+      margin-bottom: 4rem;
+    }
+  
+    main header figure {
+      display: none;
+    }
+  
+  }
+
+
+  @media (max-width: 470px) {
+
+    main header{
+      margin-top: 3rem;
+      padding: 5%;
+    }
+  
+    .header__div-text h1 {
+      font-size: 2.5rem;
+    }
+  
+  }
+  
+  

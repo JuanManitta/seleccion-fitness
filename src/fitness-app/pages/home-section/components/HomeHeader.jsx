@@ -1,5 +1,6 @@
-import { useRef } from 'react';
 import './homeHeader.css'
+
+
 
 
 
@@ -23,7 +24,7 @@ export const HomeHeader = ({headerRef, aEntrenarNavigate}) => {
         </div>
         <div className="header__div-figure">
           <figure className="header__figure">
-            <img src="./src/assets/muscle-logo-header.svg" alt="brazo musculoso"/>
+            <img src="./public/assets/muscle-logo-header.svg" alt="brazo musculoso"/>
           </figure>
         </div>
         <div className="header__div-button">

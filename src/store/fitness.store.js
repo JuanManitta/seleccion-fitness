@@ -5,9 +5,6 @@ const state = {
 }
 
 
-
-
-
 const setEjercicios = ( ejercicios, filter ) => {
     state.seleccionEjercicios =  ejercicios;
     state.isFull = true;

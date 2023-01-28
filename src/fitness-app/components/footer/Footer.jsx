@@ -20,15 +20,15 @@ export const Footer = () => {
       <section className="footer__section-nav">
         <ul>
           <li>
-            <img src="./src/assets/footer-linkedin.svg" alt="Linkedin"/>
+            <img src="./public/assets/footer-linkedin.svg" alt="Linkedin"/>
             <a href="">LinkedIn</a>
           </li>
           <li>
-            <img src="./src/assets/footer-twitter.svg" alt="Twitter"/>
+            <img src="./public/assets/footer-twitter.svg" alt="Twitter"/>
             <a href="">Twitter</a>
           </li>
           <li>
-            <img src="./src/assets/footer-mail.svg" alt="Email"/>
+            <img src="./public/assets/footer-mail.svg" alt="Email"/>
             <a href="">Email</a>
           </li>
         </ul>

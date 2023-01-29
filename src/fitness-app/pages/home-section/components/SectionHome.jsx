@@ -6,7 +6,7 @@ export const SectionHome = ({sectionRef}) => {
     <section className='section__container' id="section" ref={sectionRef} >
         <div className="section__figure">
           <figure>
-            <img src="./public/assets/section-imagen-muestra.png" alt=""/>
+            <img src="./public/section-imagen-muestra.png" alt=""/>
           </figure>
         </div>
         <div className="section__text">

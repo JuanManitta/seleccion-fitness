@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom'
+import burguerMenu from '../../../assets/nav-burguer-menu.svg'
 import './navbar.css'
 
 
@@ -83,7 +84,7 @@ export const Navbar = () => {
         </div>
       </a>
       <img onClick={toggleNavbar} 
-      id="menu-burguer" className= "nav__burguer-menu"  src="./src/assets/nav-burguer-menu.svg" alt="" />
+      id="menu-burguer" className= "nav__burguer-menu"  src={burguerMenu} alt="" />
       
       <ul id="nav-menu " 
         className = {` ${isOpen 

@@ -15,7 +15,7 @@ main .section__container {
   
   .section__text h2 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-transform: uppercase;
     margin: 0;
   }
@@ -77,6 +77,10 @@ main .section__container {
   
     .section__text{
       padding: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 2rem;
     }
   
   }

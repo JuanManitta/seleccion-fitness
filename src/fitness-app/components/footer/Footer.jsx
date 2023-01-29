@@ -1,5 +1,8 @@
 import { useNavigate } from 'react-router-dom'
 import './footer.css'
+import linkedin from '../../../assets/footer-linkedin.svg'
+import mail from '../../../assets/footer-mail.svg'
+import twitter from '../../../assets/footer-twitter.svg'
 
 
 export const Footer = () => {
@@ -20,15 +23,15 @@ export const Footer = () => {
       <section className="footer__section-nav">
         <ul>
           <li>
-            <img src="./public/footer-linkedin.svg" alt="Linkedin"/>
+            <img src={linkedin} alt="Linkedin"/>
             <a href="">LinkedIn</a>
           </li>
           <li>
-            <img src="./public/footer-twitter.svg" alt="Twitter"/>
+            <img src={twitter} alt="Twitter"/>
             <a href="">Twitter</a>
           </li>
           <li>
-            <img src="./public/footer-mail.svg" alt="Email"/>
+            <img src={mail} alt="Email"/>
             <a href="">Email</a>
           </li>
         </ul>

@@ -1,4 +1,5 @@
 import './sectionHome.css'
+import imagenMuestra from '../../../../assets/section-imagen-muestra.png'
 
 
 export const SectionHome = ({sectionRef}) => {
@@ -6,7 +7,7 @@ export const SectionHome = ({sectionRef}) => {
     <section className='section__container' id="section" ref={sectionRef} >
         <div className="section__figure">
           <figure>
-            <img src="./public/section-imagen-muestra.png" alt=""/>
+            <img src={imagenMuestra} alt=""/>
           </figure>
         </div>
         <div className="section__text">

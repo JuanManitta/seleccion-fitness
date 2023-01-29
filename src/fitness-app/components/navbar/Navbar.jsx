@@ -38,9 +38,10 @@ export const Navbar = () => {
     navigate('/', {
       replace: true
     });
-    headerRef.current.scrollIntoView({ 
-      behavior: 'smooth', 
-      block: 'start'
+
+    window.scrollTo({ 
+      top: 0, 
+      behavior: 'smooth'
     }); 
   }
 
